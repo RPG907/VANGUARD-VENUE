@@ -1,0 +1,28 @@
+.container {
+  color: var(--textColor);
+  background-color: var(--bgcolor_2);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (min-width: 990px) {
+  .container {
+    /* position: absolute; */
+    top: -100%;
+    z-index: 2;
+    width: 100%;
+    background-color: var(--bgcolor_2);
+    transition: top 0.7s ease;
+  }
+
+  .headerOpen {
+    top: 0;
+  }
+}

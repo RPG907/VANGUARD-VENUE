@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "path": "/"
+  },
+  {
+    "title": "Evenements",
+    "path": "/events"
+  },
+  {
+    "title": "About us",
+    "path": "/about-us"
+  },
+  {
+    "title": "Contact",
+    "path": "/contact"
+  },
+  {
+    "title": "Admin",
+    "path": "/admin"
+  }
+]

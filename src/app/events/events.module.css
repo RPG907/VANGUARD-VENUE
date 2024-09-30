@@ -1,0 +1,7 @@
+.container {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+	background-color: var(--bgColor);
+	padding: 2rem;
+}

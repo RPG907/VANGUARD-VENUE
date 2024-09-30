@@ -1,0 +1,9 @@
+.titre {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}

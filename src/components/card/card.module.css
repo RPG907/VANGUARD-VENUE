@@ -1,0 +1,59 @@
+.cardContainer {
+	width: 19rem;
+	border-radius: 0.7rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+/* 	margin: 0.5rem;
+ */	background-color: var(--textColor);
+	color: var(--bgColor);
+	min-height: 350px;
+/* 	border: 1px solid black;
+ */}
+
+
+
+.cardImg {
+	width: 100%;
+	height: 170px;
+	border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.cardTitle {
+	font-size: 1.5rem;
+	font-size: 700;
+	margin: 0.5rem 5%;
+}
+
+.cardDescription {
+	margin: 0.5rem 5%;
+	font-size: 0.8rem;
+}
+
+.cardButton {
+	display: flex;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+	border-radius: 5px;
+	background-color: var(--secondaryColor);
+	color: var(--bgColor);
+
+
+	padding: 5px 10px;
+    background: var(--secondaryColor);
+    font-size: 1rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: fit-content;
+    margin: 16px 0;
+}
+
+.avatar {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	align-self: center;
+	border: 3px solid var(--button);
+}

@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bgcolor_2: light-blue;
+  --bgColor: black;
+  --textColor: white;
+  --darkGray: #25252a;
+  --lightGray: rgb(180, 176, 176);
+
+  --secondaryColor: rgb(129, 92, 158);
+  --autre: rgb(245, 108, 109);
+  --dark: #221c25;
+  --hover: beige;
+  --cardBackground: black;
+}
+
+@font-face {
+  font-family: PTSerif;
+  src: url(/public/fonts/PTSerif/PTSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(/public/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: Overpass;
+  src: url(/public/fonts/Overpass/Overpass-Regular.ttf);
+}
+
+@font-face {
+  font-family: Bold-Overpass;
+  src: url(/public/fonts/Overpass/Overpass-Bold.ttf);
+}
+
+@font-face {
+  font-family: Bold-Oswald;
+  src: url(/public/fonts/Oswald/Oswald-Bold.ttf);
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Overpass;
+  /* background-color: var(--bgColor);
+  color: var(--textColor); */
+}
+body {
+  overflow-x: hidden;
+}
+
+.global-container {
+  max-width: 2000px;
+  margin: 0 auto;
+  width: 90%;
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: var(--textColor) !important;
+}
+.slick-prev,
+.slick-next {
+  width: 50px !important;
+  height: 50px !important;
+  top: 41% !important;
+}
+
+.slick-next {
+  right: 25px !important;
+  z-index: 2;
+}
+
+.slick-prev {
+  left: 25px !important;
+  z-index: 2;
+}
+.slick-dots li.slick-active div {
+  color: var(--autre) !important;
+  font-size: 60px;
+}
+
+.mbot-2 {
+  margin-bottom: 2rem;
+}
+.mbot-1 {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 990px) {
+  .slick-next,
+  .slick-prev {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+.dark {
+  --bgcolor_2: black;
+  --bgColor: black;
+  --textColor: white;
+  --darkGray: #25252a;
+  /*   --autre: rgb(129, 92, 158);
+ */
+  --secondaryColor: rgb(129, 92, 158);
+  --autre: rgb(245, 108, 109);
+  --dark: #221c25;
+  --hover: beige;
+  --red: #c90b0b;
+  --cardBackground: black;
+  --lightGray: rgb(180, 176, 176);
+}
+
+.light {
+  --bgcolor_2: white;
+  --bgColor: white;
+  --textColor: black;
+  --darkGray: #d7d7e64f;
+  --secondaryColor: rgb(129, 92, 158);
+  --autre: rgb(245, 108, 109);
+  --dark: #d1a7e6;
+  --hover: rgb(65, 65, 56);
+  --red: #c90b0b;
+  --cardBackground: white;
+  --lightGray: rgb(180, 176, 176);
+}
+
+.light .header img,
+.light .footer img {
+  filter: invert(100);
+}
+
+.light .main .abstractBackground {
+  filter: invert(100%) grayscale(100%) blur(1px);
+  color: var(--textColor);
+}
+
+.light .main .introText {
+  background: none;
+}
+
+.light .oneCard {
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.whole-page-container {
+  background-color: var(--bgColor);
+}

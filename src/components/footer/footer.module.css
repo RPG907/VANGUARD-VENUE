@@ -1,0 +1,26 @@
+.container {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  margin-top: 4rem;
+}
+
+.content {
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.links {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (min-width: 990px) {
+  .links {
+    display: flex;
+  }
+}
